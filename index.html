@@ -35,9 +35,12 @@
                                         class="btn btn-danger">Borrar</button>
                                 </div>
                                 <div>
-                                    <textarea class="form-control text-left" placeholder="descripcion" rows="4">
-
-                            </textarea>
+                                    <select class="form-select" multiple aria-label="Default select example">
+                                        <option selected value="1">Allan Poe</option>
+                                        <option value="2">Mark Twain </option>
+                                        <option value="3">Lewis Carro</option>
+                                        <option value="3">Isabel Allende</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
@@ -57,9 +60,12 @@
                                         class="btn btn-danger">Borrar</button>
                                 </div>
                                 <div>
-                                    <textarea class="form-control text-left" placeholder="descripcion" rows="4">
-
-                            </textarea>
+                                    <select class="form-select" multiple aria-label="Default select example">
+                                        <option selected value="1">La casa de</option>
+                                        <option value="2">El conde </option>
+                                        <option value="3">Las aventuras</option>
+                                        <option value="3">Alicia en el Pais</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
@@ -74,7 +80,14 @@
                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <strong>Editoriales</strong>
+                                <div class="d-grid gap-2 d-md-block text-center mb-2">
+                                    <button type="button" class="btn btn-primary">Nuevo</button><button
+                                        class="btn btn-danger">Borrar</button>
+                                </div>
+                                <select class="form-select" multiple aria-label="Default select example">
+                                    <option selected value="1">Alfaguara</option>
+                                    <option value="2">Penguin</option>
+                                </select>
                             </div>
                         </div>
                     </div>
@@ -98,12 +111,108 @@
                     <div class="tab-content" id="nav-tabContent">
                         <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
                             aria-labelledby="nav-home-tab">
-                            <p class="fw-bold">Detalle de libro</p>
+                            <p class="fw-bold">Detalle de autor</p>
                             <form action="#" class="form">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="mb-3 row">
+                                            <label for="inputPassword" class="col-sm-2 col-form-label fw-bold">Nombre:
+                                            </label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="" value="Mark Twain">
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row">
+                                            <label for="inputPassword" class="col-sm-2 col-form-label fw-bold">Pais:
+                                            </label>
+                                            <div class="col-sm-10">
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected value="1">USA</option>
+                                                    <option value="2">CRC</option>
+                                                    <option value="3">CAN</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3 row">
+                                            <label for="inputPassword" class="col-sm-2  col-form-label fw-bold">Nac.
+                                            </label>
+                                            <div class="col-auto">
+                                                <input type="number" class="form-control" value="1835">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row justify-content-md-end mb-3">
+                                            <div class="col-auto">
+                                                <label for="inputPassword"
+                                                    class="col-auto col-form-label fw-bold">Fallece: </label>
+                                            </div>
+                                            <div class="col-auto">
+                                                <input type="number" class="form-control" value="1910">
+                                            </div>
+                                            <div class="mb-3 row">
+                                                <label for="inputPassword"
+                                                    class="col-auto col-form-label fw-bold">Género: </label>
+                                                <select class="form-select" multiple
+                                                    aria-label="Default select example">
+                                                    <option selected value="1">Humor </option>
+                                                    <option value="2">Sátira </option>
+                                                    <option value="3">Aventuras</option>
+                                                </select>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row m-3">
+                                    <table class="table table-striped table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Libro</th>
+                                                <th>Editorial</th>
+                                                <th>Año</th>
+                                                <th>Edición</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>El principe y el</td>
+                                                <td>Alfaguara</td>
+                                                <td>1995</td>
+                                                <td>5ta </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tow Sawyer</td>
+                                                <td>Penguin </td>
+                                                <td>1965</td>
+                                                <td>2ta </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+
+
+                                </div>
+
+                                <hr>
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                    <button type="button" class="btn btn-primary">Cancel</button>
+                                    <button class="btn btn-danger">Ok</button>
+                                </div>
+                            </form>
+
+
+
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <form action="#" class="form">
+                                <p class="fw-bold">Detalle de libro</p>
                                 <div class="mb-3 row">
                                     <label for="inputPassword" class="col-sm-2 col-form-label fw-bold">Nombre: </label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputPassword" value="Las aventuras de Tom Sawyer">
+                                        <input type="text" class="form-control" id="inputPassword"
+                                            value="Las aventuras de Tom Sawyer">
                                     </div>
                                 </div>
                                 <div class="mb-3 row">
@@ -120,7 +229,8 @@
                                         <input type="number" class="form-control" value="2004">
                                     </div>
                                     <div class="col-auto">
-                                    <label for="inputPassword" class="col-sm-2 col-form-label fw-bold">Edición: </label>
+                                        <label for="inputPassword" class="col-sm-2 col-form-label fw-bold">Edición:
+                                        </label>
                                     </div>
                                     <div class="col-auto">
                                         <select class="form-select" aria-label="Default select example">
@@ -132,12 +242,13 @@
                                 </div>
                                 <div class="row mb-3">
                                     <div class="col-auto">
-                                        <label for="inputPassword" class="col-sm-2 col-form-label fw-bold">Actores: </label>
+                                        <label for="inputPassword" class="col-sm-2 col-form-label fw-bold">Actores:
+                                        </label>
                                     </div>
                                     <div class="col-sm-8">
-                                        <select class="form-select" multiple  aria-label="Default select example">
+                                        <select class="form-select" multiple aria-label="Default select example">
                                             <option value="1">Mark Twain</option>
-                                        
+
                                         </select>
                                     </div>
 
@@ -153,73 +264,31 @@
                                     <button type="button" class="btn btn-primary">Cancel</button>
                                     <button class="btn btn-danger">Ok</button>
                                 </div>
-
                             </form>
-
-
-
                         </div>
-                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            <p class="fw-bold">Detalle de la Editorial</p>
                             <form action="#" class="form">
-                                <p class="fw-bold">Detalle de libro</p>
                                 <div class="mb-3 row">
                                     <label for="inputPassword" class="col-sm-2 col-form-label fw-bold">Nombre: </label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="" value="EL VIEJO Y EL MAR">
+                                        <input type="text" class="form-control" id="inputPassword"
+                                            value="">
                                     </div>
                                 </div>
                                 <div class="mb-3 row">
-                                    <label for="inputPassword" class="col-sm-2 col-form-label fw-bold">ISBN: </label>
+                                    <label for="inputPassword" class="col-sm-2 col-form-label fw-bold">Pais: </label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" value="12244-5678-45">
+                                        <input type="text" class="form-control" value="CRC">
                                     </div>
                                 </div>
-                                <div class="row justify-content-md-end mb-3">
-                                    <div class="col-auto">
-                                        <label for="inputPassword" class="col-auto col-form-label fw-bold">Año: </label>
-                                    </div>
-                                    <div class="col-auto">
-                                        <input type="number" class="form-control" value="2006">
-                                    </div>
-                                    <div class="col-auto">
-                                    <label for="inputPassword" class="col-sm-2 col-form-label fw-bold">Edición: </label>
-                                    </div>
-                                    <div class="col-auto">
-                                        <select class="form-select" aria-label="Default select example">
-                                            <option selected value="1">3th</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="row mb-3">
-                                    <div class="col-auto">
-                                        <label for="inputPassword" class="col-sm-2 col-form-label fw-bold">Actores: </label>
-                                    </div>
-                                    <div class="col-sm-8">
-                                        <select class="form-select" multiple  aria-label="Default select example">
-                                            <option value="1">Ernest Hemingway</option>
-                                        
-                                        </select>
-                                    </div>
-
-                                    <div class="col form-group">
-
-                                        <button type="button" class="btn btn-primary">Agregar</button>
-                                        <button class="btn btn-danger">Eliminar</button>
-                                    </div>
-                                </div>
-
                                 <hr>
                                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                                     <button type="button" class="btn btn-primary">Cancel</button>
                                     <button class="btn btn-danger">Ok</button>
                                 </div>
-
-                            </form>    
+                            </form>
                         </div>
-                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                            <p class="fw-bold">Detalle de la Editorial</p></div>
                     </div>
 
                 </div>
